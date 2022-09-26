@@ -81,16 +81,7 @@
             head = head -> next;
         }
         cout<<'\n';
-    }
-    void deleteHead(node* head)
-    {
-        if(head == NULL) 
-            return;
-        node* temp = head;
-        head = head -> next;
-        delete temp;
-        return;
-    }
+    }    
     int main()
     {
         node* head = NULL;  //creating a new node
@@ -98,8 +89,6 @@
         insertAtHead(head,2);
         insertAtHead(head,1);
         printNodes(head);
-        deleteHead(head);
-        printNodes(head);
-        
+ 
         return 0;
     }
